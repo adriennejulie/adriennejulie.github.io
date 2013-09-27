@@ -3,11 +3,7 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="main.css">
-<<<<<<< HEAD
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
-=======
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
->>>>>>> master
   <title>37signals: Web-based collaboration apps for small business</title>
 </head>
 <body>
@@ -40,21 +36,16 @@ function HideProduct($product) {
 <li><a href="#">Company blog</a></li>
 </ul>
 
+
 <div id="logo"><img src="images/logo-37s-large.png"></div>
+<div id="top_wrapper">
 <h1 id="original_motto">Making collaboration productive and enjoyable for people every day.</h1>
 <h4 id="original_tagline">Frustration-free web-based apps for collaboration, sharing information, and making decisions.</h4>
 
 <div class="hidden" id="basecamp-motto">
-	<h1><a href="http://basecamp.com">Basecamp</a> is the project management tool you wish you had on your last project.</h1>
+<h1><a href="http://basecamp.com">Basecamp</a> is the project management tool you wish you had on your last project.</h1>
 </div>	
 
-<div id="logo"><img src=images/logo-37s-large.png></div>
-<h1 id="original_motto" style="display:block;">Making collaboration productive and enjoyable for people every day.</hi>
-<h4 id="original_tagline" style="display: block;">Frustration-free web-based apps for collaboration, sharing information, and making decisions.</h4>
-
-<div class="hidden" id="basecamp-motto">
-	<h1><a href="http://basecamp.com">Basecamp</a> is the project management tool you wish you had on your last project.</h1>
-</div>
 <div class="hidden" id="basecamp-description">
 	<h4>Are you still managing projects with email? Are you still using Excel for your to-do lists? It's time to upgrade to Basecamp. Manage projects and collaborate with your team and clients the modern way.</h4>
 </div>
@@ -67,14 +58,14 @@ function HideProduct($product) {
 <div class="hidden" id="campfire-motto">
   <h1>From near or far, <a href="http://campfirenow.com">Campfire</a> helps teams work together over the web in real-time.</h1>
 </div>	
-<div class="hidden" id="campfire-description">
+	<div class="hidden" id="campfire-description">
   <h4>Share ideas, discussions, concepts, images, code samples, videos, mockups, and documents in a real-time private chat room. It's game changing. We couldn't run our own business without Campfire.</h4>
+	</div>	
 </div>	
-	
 	
 <div id="products">
 <a class="product" id="basecamp" href="http://basecamp.com" onmouseover="ShowProduct('basecamp')" onmouseout="HideProduct('basecamp')">
-<img class="hidden" id="basecamp-arrow" src="images/arrow-left.png">
+<img class="hidden arrow" id="basecamp-arrow" src="images/arrow-left.png" style="display:none">
 <img src="images/logo-bc.png">
 <p class="title">Basecamp</p>
 <p class="tagline">Manage Projects</p>
@@ -82,19 +73,20 @@ function HideProduct($product) {
 
 
 <a class="product" id="highrise" href="http://highrisehq.com" onmouseover="ShowProduct('highrise')"" onmouseout="HideProduct('highrise')">
-<img class="hidden" id="highrise-arrow" src="images/arrow-left.png">
+<img class="hidden arrow" id="highrise-arrow" src="images/arrow-left.png" style="display:none">
 <img src="images/logo-hr.png">
 <p class="title">Highrise</p>
 <p class="tagline">Manage Contacts</p>
 <p class="description">Know the people you do business with.</p></a>
 
 <a class="product" id="campfire" href="http://campfirenow.com" onmouseover="ShowProduct('campfire')" onmouseout="HideProduct('campfire')">
-<img class="hidden" id="campfire-arrow" src="images/arrow-right.png">
+<img class="hidden arrow" id="campfire-arrow" src="images/arrow-right.png" style="display:none">
 <img src="images/logo-cf.png">
 <p class="title">Campfire</p>
 <p class="tagline">Work in Real-Time</p>
 <p class="description">Group chat rooms for your business.</p></a>
 </div>
+
 
 </body>
 </html>
