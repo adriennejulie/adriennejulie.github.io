@@ -25,10 +25,17 @@ function HideProduct($product) {
 		$("#original_tagline").show();
       
     };
+
 </script>
 <div id="top_nav">
 <ul>
-<li id="day">Happy Monday.</li>
+<li id="day">
+	<script type="text/javascript">
+	var dayNames = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+	var now = new Date();
+	document.write("Happy " + dayNames[now.getDay()] + ".");
+	</script>
+</li>
 <li><a href="#" id="sign_in">Sign in</a></li>
 <li><a href="#">System status</a></li>
 <li><a href="#">Follow us on Twitter</a></li>
@@ -65,7 +72,7 @@ function HideProduct($product) {
 	
 <div id="products">
 <a class="product" id="basecamp" href="http://basecamp.com" onmouseover="ShowProduct('basecamp')" onmouseout="HideProduct('basecamp')">
-<img class="hidden arrow" id="basecamp-arrow" src="images/arrow-left.png" style="display:none">
+<img class="hidden" id="basecamp-arrow" src="images/arrow-left.png" style="display:none">
 <img src="images/logo-bc.png">
 <p class="title">Basecamp</p>
 <p class="tagline">Manage Projects</p>
@@ -73,14 +80,14 @@ function HideProduct($product) {
 
 
 <a class="product" id="highrise" href="http://highrisehq.com" onmouseover="ShowProduct('highrise')"" onmouseout="HideProduct('highrise')">
-<img class="hidden arrow" id="highrise-arrow" src="images/arrow-left.png" style="display:none">
+<img class="hidden" id="highrise-arrow" src="images/arrow-left.png" style="display:none">
 <img src="images/logo-hr.png">
 <p class="title">Highrise</p>
 <p class="tagline">Manage Contacts</p>
 <p class="description">Know the people you do business with.</p></a>
 
 <a class="product" id="campfire" href="http://campfirenow.com" onmouseover="ShowProduct('campfire')" onmouseout="HideProduct('campfire')">
-<img class="hidden arrow" id="campfire-arrow" src="images/arrow-right.png" style="display:none">
+<img class="hidden" id="campfire-arrow" src="images/arrow-right.png" style="display:none">
 <img src="images/logo-cf.png">
 <p class="title">Campfire</p>
 <p class="tagline">Work in Real-Time</p>
