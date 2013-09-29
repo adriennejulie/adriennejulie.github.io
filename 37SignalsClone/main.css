@@ -100,22 +100,20 @@ text-align: center;
 	display: none;
 }
 
-.arrow {
-	position:absolute;
-	display:none;
-}
-
 #basecamp-arrow {
+	position:absolute;
 	left: 475px;
 	bottom: 320px;
 }
 
 #highrise-arrow {
+	position:absolute;
 	left: 700px;
 	bottom: 320px;
 }
 
 #campfire-arrow {
+	position:absolute;
 	right: 525px;
 	bottom: 320px;
 }
